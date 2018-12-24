@@ -4,24 +4,26 @@
 	{% include "components/head.njk" %}
 
 	<body>
+		<div class="container">
 
-		<header class="cf">
-			<div class="row">
-				<div class="logotype">
-					<img src='{{ "/static/img/logo.png" | url }}' alt=''>
-					<a href="{{ '/' | url }}">{{ metadata.title }}</a>
+			<header class="cf">
+				<div class="row">
+					<div class="logotype">
+						<img src='{{ "/static/img/logo.png" | url }}' alt=''>
+						<a href="{{ '/' | url }}">{{ metadata.title }}</a>
+					</div>
+					{% include "components/nav.njk" %}
 				</div>
-				{% include "components/nav.njk" %}
-			</div>
-		</header>
+			</header>
 
-		<main>
-			<div class="row">
-				{{ layoutContent | safe }}
-			</div>
-		</main>
+			<main>
+				<div class="row">
+					{{ layoutContent | safe }}
+				</div>
+			</main>
 
-		{% include "components/footer.njk" %}
+			{% include "components/footer.njk" %}
+		</div>
 
 	</body>
 

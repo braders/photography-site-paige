@@ -92,6 +92,12 @@ header
 	padding: 30px;
 }
 
+.container {
+    overflow: hidden;
+    max-width: 100%;
+    position: relative;
+}
+
 .row
 {
 	margin: 0 auto;
