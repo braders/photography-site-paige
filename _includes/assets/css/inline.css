@@ -150,6 +150,10 @@ header
 }
 
 
+.content-area
+{
+	padding-top: 40px;
+}
 .content-area p
 {
 	margin-bottom: 20px;

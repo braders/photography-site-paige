@@ -7,7 +7,6 @@ permalink: /about/index.html
 tags:
   - nav
 ---
-![Paige](/static/img/logo.png)
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent auctor nibh in nisl lobortis fermentum. Aliquam erat volutpat. Nullam tellus libero, molestie vitae erat ut, lobortis porta nulla. Curabitur lobortis rutrum eros, non porttitor ipsum euismod dignissim. Sed eu ex diam. Nulla massa tellus, porttitor vel neque et, blandit volutpat lorem. Ut rhoncus nisi eget viverra aliquam. Phasellus auctor justo nec tortor lacinia vulputate. Pellentesque non nisi eget mi posuere hendrerit quis at ante. Suspendisse eleifend ante varius lectus malesuada tincidunt faucibus lobortis neque. Aliquam a convallis quam. Suspendisse rutrum eros eu arcu malesuada, ut interdum metus viverra. Maecenas eu nulla sit amet mi accumsan malesuada. Curabitur et ligula in enim luctus vulputate quis quis purus.
 
