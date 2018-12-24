@@ -1,7 +1,9 @@
 ---
+layout: layouts/about.njk
 title: About Paige
-permalink: /about/index.html
 navtitle: About
+section: about
+permalink: /about/index.html
 ---
 ![Paige](/static/img/logo.png)
 
