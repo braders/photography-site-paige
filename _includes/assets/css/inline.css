@@ -52,12 +52,12 @@ table {
  */
 .cf:before,
 .cf:after {
-    content: " "; /* 1 */
-    display: table; /* 2 */
+	content: " "; /* 1 */
+	display: table; /* 2 */
 }
 
 .cf:after {
-    clear: both;
+	clear: both;
 }
 
 /**
@@ -65,12 +65,20 @@ table {
  * Include this rule to trigger hasLayout and contain floats.
  */
 .cf {
-    *zoom: 1;
+	*zoom: 1;
 }
 
 /**
  * Custom styles
  */
+
+ html {
+	box-sizing: border-box;
+}
+*, *:before, *:after {
+	box-sizing: inherit;
+}
+
 body
 {
 	background: #efefef;
@@ -133,4 +141,69 @@ header
 .navbar a:focus
 {
 	text-decoration: underline;
+}
+
+
+.content-area p
+{
+	margin-bottom: 20px;
+}
+.content-area h1,
+.faux-h1
+{
+	font-family: Lato;
+	font-size: 32px;
+	font-weight: 300;
+	margin-bottom: 40px;
+}
+.faux-h1
+{
+	margin-bottom: 26px;
+}
+
+.contact-block
+{
+	background: #9bb9bb;
+	margin-left: -2000px;
+	padding-left: 2000px;
+	margin-right: -2000px;
+	padding-right: 2000px;
+
+	padding-top: 20px;
+	padding-bottom: 50px;
+	margin-bottom: 20px;
+}
+
+input, textarea
+{
+	border: 1px solid #727272;
+	padding: 10px;
+	display: block;
+	font-family: inherit;
+	font-size: 14px;
+	margin-bottom: 20px;
+}
+
+label
+{
+	margin-bottom: 4px;
+	display: inline-block;
+}
+
+input, textarea, button
+{
+	width: 600px;
+}
+
+button[type=submit]
+{
+	background: black;
+	color: white;
+	font-family: inherit;
+	font-size: 20px;
+	font-weight: 600;
+	text-transform: uppercase;
+	border: none;
+	padding: 12px;
+	cursor: pointer;
 }
