@@ -48,11 +48,40 @@ table {
 }
 
 /**
+ * nicolasgallagher.com/micro-clearfix-hack/
+ */
+.cf:before,
+.cf:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+.cf:after {
+    clear: both;
+}
+
+/**
+ * For IE 6/7 only
+ * Include this rule to trigger hasLayout and contain floats.
+ */
+.cf {
+    *zoom: 1;
+}
+
+/**
  * Custom styles
  */
 body
 {
+	background: #efefef;
+	font-family: 'Montserrat', sans-serif;
+	line-height: 1.2;
+}
+
+header
+{
 	background-color: #9bb9bb;
+	padding: 30px;
 }
 
 .row
@@ -60,4 +89,48 @@ body
 	margin: 0 auto;
 	max-width: 1024px;
 	padding: 0 20px;
+}
+
+.logotype
+{
+	font-family: Lato;
+	font-weight: 300;
+	font-size: 30px;
+	float: left;
+}
+.logotype img
+{
+	height: 32px;
+	vertical-align: bottom;
+	position: relative;
+	top: -2px;
+}
+.logotype a
+{
+	color: black;
+	text-decoration: none;
+}
+
+.navbar
+{
+	float: right;
+	font-family: Lato;
+	font-size: 18px;
+}
+.navbar li
+{
+	display: inline-block;
+}
+.navbar a
+{
+	display: inline-block;
+	text-decoration: none;
+	color: inherit;
+	padding: 7px 14px;
+}
+
+.navbar a:hover,
+.navbar a:focus
+{
+	text-decoration: underline;
 }

@@ -4,6 +4,8 @@ title: About Paige
 navtitle: About
 section: about
 permalink: /about/index.html
+tags:
+  - nav
 ---
 ![Paige](/static/img/logo.png)
 
