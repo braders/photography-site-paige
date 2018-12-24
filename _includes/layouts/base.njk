@@ -13,7 +13,9 @@
 		</header>
 
 		<main>
-			{{ layoutContent | safe }}
+			<div class="row">
+				{{ layoutContent | safe }}
+			</div>
 		</main>
 
 		{% include "components/footer.njk" %}
