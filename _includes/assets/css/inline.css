@@ -86,6 +86,19 @@ body
 	line-height: 1.2;
 }
 
+img
+{
+	max-width: 100%;
+	font-style: italic;
+	vertical-align: middle;
+}
+
+img[width],
+img[height]
+{
+	max-width: none;
+}
+
 header
 {
 	background-color: #9bb9bb;
@@ -109,7 +122,7 @@ header
 {
 	font-family: Lato;
 	font-weight: 300;
-	font-size: 30px;
+	font-size: 30px 0;
 	float: left;
 }
 .logotype img
@@ -149,14 +162,37 @@ header
 	text-decoration: underline;
 }
 
+@media (max-width: 600px)
+{
+	.navbar
+	{
+		float: none;
+		position: absolute;
+		top: 90px;
+		background: #9bb9bb;
+		left: 0;
+		right: 0;
+		padding: 0 20px;
+		border-top: 1px solid #c4dadb;
+	}
+}
+
 
 .content-area
 {
 	padding-top: 40px;
+	line-height: 1.4;
+	font-size: 1.1em;
 }
 .content-area p
 {
 	margin-bottom: 20px;
+}
+.content-area--about img
+{
+	float: left;
+	max-width: 30%;
+	padding-right: 20px;
 }
 .content-area h1,
 .faux-h1
@@ -216,4 +252,9 @@ button[type=submit]
 	border: none;
 	padding: 12px;
 	cursor: pointer;
+}
+
+footer
+{
+	margin-bottom: 20px;
 }
