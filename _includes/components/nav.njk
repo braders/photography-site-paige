@@ -1,9 +1,32 @@
-<nav class="navbar">
-	<ul>
-	{%- for nav in collections.nav -%}
-		<li>
-			<a href="{{ nav.url | url }}"{% if nav.url == page.url %} data-current="current item"{% endif %}>{{ nav.data.navtitle }}</a>
-		</li>
-	{%- endfor -%}
-	</ul>
-</nav>
+<header class="cf">
+	<div class="row">
+		<a href="{{ '/' | url }}" class="logolink">
+			<div class="logotype">
+				<img src='{{ "/static/img/logo.png" | url }}' alt=''>
+				<p class="logotype__txt">
+					{{ metadata.title }}
+					<span class="logotype__subtitle">{{ metadata.subtitle }}</span>
+				</p>
+			</div>
+		</a>
+		<button class="menu-toggle">
+			<div class="menu-toggle__burger" aria-hidden="true">
+				<span class="line top"></span>
+				<span class="line mid"></span>
+				<span class="line bottom"></span>
+			</div>
+			<span class="menu-toggle__label">
+				Menu
+			</span>
+		</button>
+		<nav class="navbar">
+			<ul>
+			{%- for nav in collections.nav -%}
+				<li>
+					<a href="{{ nav.url | url }}"{% if nav.url == page.url %} data-current="current item"{% endif %}>{{ nav.data.navtitle }}</a>
+				</li>
+			{%- endfor -%}
+			</ul>
+		</nav>
+	</div>
+</header>
