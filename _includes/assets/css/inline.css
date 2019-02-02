@@ -424,14 +424,18 @@ h2
 	margin-bottom: 60px;
 }
 
-.imggrid
+@media (min-width: 1000px)
 {
-	display: flex;
-	flex-wrap: wrap;
-	justify-content: space-between;
+	.imggrid
+	{
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-between;
+	}
 }
 .imggrid__item
 {
+	display: inline-block;
 	margin-right: 30px;
 	margin-bottom: 30px;
 
@@ -460,7 +464,7 @@ h2
 }
 .imggrid img
 {
-	height: 290px;
+	max-height: 290px;
 }
 
 .collection__subtitle
