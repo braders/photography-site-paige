@@ -4,6 +4,7 @@ title: About Paige
 navtitle: About
 section: about
 permalink: /about/index.html
+editablepage: true
 tags:
   - nav
 ---

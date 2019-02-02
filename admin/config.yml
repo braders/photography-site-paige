@@ -11,6 +11,22 @@ collections:
   # Our pages e.g. About
   - name: 'pages'
     label: 'Page'
+    filter: {field: "editablepage", value: "true"}
+    folder: 'pages'
+    create: false # Change to true to allow editors to create new pages
+    slug: '{{slug}}'
+    fields:
+      - { name: 'layout', widget: 'hidden' }
+      - { name: 'navtitle', widget: 'hidden' }
+      - { name: 'tags', widget: 'hidden' }
+      - { name: 'editablepage', widget: 'hidden' }
+      - { label: 'Title', name: 'title', widget: 'string' }
+      - { label: 'Permalink', name: 'permalink', widget: 'string' }
+      - { label: 'Navigation Title', name: 'navtitle', widget: 'string' }
+      - { label: 'Body', name: 'body', widget: 'markdown' }
+  - name: 'Photo Collections'
+    label: 'Photo Collections'
+    filter: {field: "layout", value: "layouts/collection.njk"}
     folder: 'pages'
     create: false # Change to true to allow editors to create new pages
     slug: '{{slug}}'
@@ -21,4 +37,10 @@ collections:
       - { label: 'Title', name: 'title', widget: 'string' }
       - { label: 'Permalink', name: 'permalink', widget: 'string' }
       - { label: 'Navigation Title', name: 'navtitle', widget: 'string' }
-      - { label: 'Body', name: 'body', widget: 'markdown' }
+      - label: "Collections"
+        name: "collections"
+        widget: "object"
+        fields:
+          - {label: "Title", name: "title", widget: "string"}
+          - {label: "Subtitle", name: "subitle", widget: "string"}
+          - {label: "Photos", name: "photos", widget: "relation", collection: "photos", searchFields: ["name"], valueField: "name"}

@@ -1,0 +1,27 @@
+---
+layout: layouts/base.njk
+section: collection
+---
+
+<div class='content-area cf'>
+	<h1>{{ title }}</h1>
+	<div class="collection">
+		<h2>Becky</h2>
+		<p class="collection__subtitle">April 2018</p>
+		<div class="imggrid">
+			<div class="imggrid__item">
+				<span class="imggrid__expand"></span>
+				<img src='https://placehold.it/400x600' alt='' data-large='https://placehold.it/1024x1024'>
+			</div>
+			<div class="imggrid__item">
+				<span class="imggrid__expand"></span>
+				<img src='https://placehold.it/400x600' alt='' data-large='https://placehold.it/1024x1024'>
+			</div>
+			<div class="imggrid__item">
+				<span class="imggrid__expand"></span>
+				<img src='https://placehold.it/579x386' alt='' data-large='https://placehold.it/1024x1024'>
+			</div>
+		</div>
+	</div>
+	{{ layoutContent | safe }}
+</div>

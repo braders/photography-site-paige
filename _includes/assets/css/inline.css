@@ -125,12 +125,6 @@ header
 	padding: 0 20px;
 }
 
-.stop-scrolling
-{
-	height: 100%;
-	overflow: hidden;
-}
-
 .logolink
 {
 	text-decoration: none;
@@ -138,7 +132,7 @@ header
 }
 .logotype
 {
-	font-family: Lato;
+	font-family: 'KoHo', sans-serif;
 	font-weight: 300;
 	font-size: 30px 0;
 	float: left;
@@ -169,7 +163,7 @@ header
 .navbar
 {
 	float: right;
-	font-family: Lato;
+	font-family: 'KoHo', sans-serif;
 	font-size: 18px;
 }
 .navbar li
@@ -194,6 +188,19 @@ header
 .menu-toggle
 {
 	display: none;
+}
+
+.stop-scrolling
+{
+	height: 100%;
+	overflow: hidden;
+}
+
+.stop-scrolling header
+{
+	position: fixed;
+	left: 0;
+	right: 0;
 }
 
 @media (max-width: 1000px)
@@ -352,13 +359,16 @@ header
 .content-area h1,
 .faux-h1
 {
-	font-family: Lato;
-	font-size: 32px;
-	font-weight: 300;
+	font-family: 'KoHo', sans-serif;
+	font-size: 42px;
+	font-weight: 400;
 	margin-bottom: 40px;
 }
-.faux-h1
+h2
 {
+	font-family: 'KoHo', sans-serif;
+	font-size: 30px;
+	font-weight: 400;
 	margin-bottom: 26px;
 }
 
@@ -397,6 +407,7 @@ header
 .contact-block button
 {
 	width: 600px;
+	max-width: 100%;
 }
 
 .contact-block button[type=submit]
@@ -404,9 +415,58 @@ header
 	background: black;
 	color: white;
 	font-size: 20px;
-	font-weight: 600;
-	text-transform: uppercase;
+	font-family: 'KoHo', sans-serif;
 	padding: 12px;
+}
+
+.collection
+{
+	margin-bottom: 60px;
+}
+
+.imggrid
+{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+.imggrid__item
+{
+	margin-right: 30px;
+	margin-bottom: 30px;
+
+	position: relative;
+	cursor: pointer;
+}
+.imggrid__item:hover .imggrid__expand,
+.imggrid__item:focus .imggrid__expand
+{
+	opacity: 1;
+}
+.imggrid__expand
+{
+	position: absolute;
+	top: 10px;
+	right: 7px;
+	width: 24px;
+	height: 24px;
+	opacity: .6;
+	transition: .5s ease;
+	box-shadow: 1px 1px 5px -1px #000;
+	background-image: url(/static/img/maximize.svg);
+	background-size: 24px 24px,20px 20px;
+	background-position: center,center;
+	background-repeat: no-repeat,no-repeat;
+}
+.imggrid img
+{
+	height: 290px;
+}
+
+.collection__subtitle
+{
+	font-size: 14px;
+	margin-top: -10px;
 }
 
 footer

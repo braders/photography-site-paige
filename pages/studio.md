@@ -1,4 +1,5 @@
 ---
+layout: layouts/collection.njk
 title: Studio
 navtitle: Studio
 permalink: /studio/index.html
