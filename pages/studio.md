@@ -1,8 +1,13 @@
 ---
 layout: layouts/collection.njk
-title: Studio
 navtitle: Studio
-permalink: /studio/index.html
 tags:
   - nav
+title: Studio
+permalink: /studio/index.html
+collections:
+  - photos: ''
+    subitle: April 2018
+    title: ‘Becky’
 ---
+
