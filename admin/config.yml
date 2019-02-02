@@ -39,7 +39,7 @@ collections:
       - { label: 'Navigation Title', name: 'navtitle', widget: 'string' }
       - label: "Collections"
         name: "collections"
-        widget: "object"
+        widget: "list"
         fields:
           - {label: "Title", name: "title", widget: "string"}
           - {label: "Subtitle", name: "subitle", widget: "string"}
