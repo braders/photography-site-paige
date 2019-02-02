@@ -299,20 +299,20 @@ header
 		-ms-transform-origin:50% 0;
 		transform-origin:50% 0
 	}
-	.is-open .line.top
+	.has-menu-open .line.top
 	{
 		top:50%;
 		-webkit-transform:rotateZ(-45deg) translateY(-50%);
 		-ms-transform:rotate(-45deg) translateY(-50%);
 		transform:rotateZ(-45deg) translateY(-50%)
 	}
-	.is-open .line.mid
+	.has-menu-open .line.mid
 	{
 		-webkit-transform:rotateZ(45deg);
 		-ms-transform:rotate(45deg);
 		transform:rotateZ(45deg)
 	}
-	.is-open .line.bottom
+	.has-menu-open .line.bottom
 	{
 		opacity:0
 	}
