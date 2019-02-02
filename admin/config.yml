@@ -45,7 +45,7 @@ collections:
         fields:
           - {label: "Title", name: "title", widget: "string"}
           - {label: "Subtitle", name: "subitle", widget: "string"}
-          - {label: "Photos", name: "photos", widget: "relation", collection: "photos", searchFields: ["title"], valueField: "title"}
+          - {label: "Photos", name: "photos", widget: "relation", collection: "Photos", searchFields: ["title"], valueField: "title"}
   - name: 'Photos'
     label: 'Photos'
     folder: 'photos'
