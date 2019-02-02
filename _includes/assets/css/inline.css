@@ -125,6 +125,12 @@ header
 	padding: 0 20px;
 }
 
+.stop-scrolling
+{
+	height: 100%;
+	overflow: hidden;
+}
+
 .logolink
 {
 	text-decoration: none;

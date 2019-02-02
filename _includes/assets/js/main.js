@@ -19,13 +19,15 @@
 				{
 					jBody.removeClass('has-menu-open');
 					jQuery('.navbar').fadeOut();
-					jQuery(document).on('touchmove.menuOpen', fn.blockPageScroll);
+					jBody.removeClass('stop-scrolling');
+					window.removeEventListener('touchmove', fn.blockPageScroll, {passive: false});
 				}
 				else
 				{
 					jBody.addClass('has-menu-open');
 					jQuery('.navbar').fadeIn();
-					jQuery(document).on('touchmove.menuOpen', fn.blockPageScroll);
+					jBody.addClass('stop-scrolling');
+					window.addEventListener('touchmove', fn.blockPageScroll, {passive: false});
 				}
 			},
 
