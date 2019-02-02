@@ -6,6 +6,7 @@
 		var fn = {
 			init: function () {
 				fn.initMenu();
+				fn.initPopover();
 			},
 
 			initMenu: function() {
@@ -33,7 +34,25 @@
 
 			blockPageScroll: function(e) {
 				e.preventDefault();
+			},
+
+			initPopover: function() {
+				jQuery('.imggrid__item').on('click', fn.openPopover);
+				jQuery('.popover, popover-bg').on('click', fn.closePopover);
+			},
+
+			openPopover: function(e)
+			{
+				var src = jQuery(this).find('[data-large]').attr('data-large');
+				jQuery('.popover').find('img').attr('src', src);
+				jQuery('.popover, .popover-bg').fadeIn(400);
+			},
+
+			closePopover: function()
+			{
+				jQuery('.popover, .popover-bg').fadeOut(400);
 			}
+
 		}
 
 		fn.init();

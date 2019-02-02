@@ -247,6 +247,7 @@ header
 		padding-top: inherit;
 		border-top: 1px solid #c4dadb;
 		background-color: #9bb9bb;
+		z-index: 200;
 	}
 	.navbar li
 	{
