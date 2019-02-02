@@ -6,7 +6,7 @@ tags:
 title: Studio
 permalink: /studio/index.html
 collections:
-  - photos: ''
+  - photos: Becky 1
     subitle: April 2018
     title: ‘Becky’
 ---
