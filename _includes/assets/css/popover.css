@@ -11,11 +11,10 @@
 	top: 0;
 	bottom: 0;
 	background-color: #333;
-	opacity: 0.6;
+	opacity: 0.9;
 }
 .popover
 {
-	display: block;
 	position: fixed;
 	left: 0;
 	right: 0;
@@ -30,4 +29,18 @@
 	transform: translate(-50%, -50%);
 	max-width: 90vw;
 	max-height: 90vh;
+}
+
+.popover::before {
+    content: "\00a0";
+    width: 40px;
+    height: 40px;
+    display: block;
+    cursor: pointer;
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    background-color: transparent;
+    background-image: url(/static/img/close-white.svg);
+    background-size: 100% 100%;
 }
