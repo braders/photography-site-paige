@@ -19,6 +19,7 @@
 				if (jBody.hasClass('has-menu-open'))
 				{
 					jBody.removeClass('has-menu-open');
+					jQuery('main').css('margin-top', '');
 					jQuery('.navbar').fadeOut();
 					jBody.removeClass('stop-scrolling');
 					window.removeEventListener('touchmove', fn.blockPageScroll, {passive: false});
@@ -26,6 +27,7 @@
 				else
 				{
 					jBody.addClass('has-menu-open');
+					jQuery('main').css('margin-top', jQuery('header').outerHeight());
 					jQuery('.navbar').fadeIn();
 					jBody.addClass('stop-scrolling');
 					window.addEventListener('touchmove', fn.blockPageScroll, {passive: false});
