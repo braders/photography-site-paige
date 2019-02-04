@@ -426,6 +426,11 @@ h2
 	margin-bottom: 60px;
 }
 
+.imggrid
+{
+	margin-right: -30px; /*Equal to right-hand padding of items */
+}
+
 @media (min-width: 1000px)
 {
 	.imggrid
@@ -467,7 +472,25 @@ h2
 }
 .imggrid img
 {
-	max-height: 290px;
+	max-height: 320px;
+}
+
+@media (max-width: 500px)
+{
+	.imggrid
+	{
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-between;
+	}
+	.imggrid-img--portrait
+	{
+		flex-basis: calc(50% - 10px);
+	}
+	.imggrid-img--landscape
+	{
+		flex-basis: 100%;
+	}
 }
 
 .collection__subtitle
