@@ -53,6 +53,7 @@
 			closePopover: function()
 			{
 				jQuery('.popover, .popover-bg').fadeOut(400);
+				jQuery('.popover').find('img').removeAttr('src');
 			}
 
 		}
