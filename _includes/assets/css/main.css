@@ -447,7 +447,7 @@ h2
 }
 @media (max-width: 1000px)
 {
-	.imggrid__item
+	.imggrid__item--portrait
 	{
 		max-width: calc(50% - 30px);
 	}
