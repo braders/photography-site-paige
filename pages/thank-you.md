@@ -4,4 +4,4 @@ title: Thank You
 editablepage: true
 permalink: /thank-you/index.html
 ---
-Thanks you for getting in touch.
+Thank you for getting in touch.

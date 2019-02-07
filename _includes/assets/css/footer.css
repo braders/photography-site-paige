@@ -1,0 +1,21 @@
+.footer-contact
+{
+	border-top: 1px solid #9bb9bb;
+	padding-top: 20px;
+	margin-top: 40px;
+}
+.footer-contact a
+{
+	display: inline-block;
+	margin-bottom: 20px;
+	text-decoration: none;
+	color: inherit;
+	font-family: 'KoHo', sans-serif;
+	font-size: 18px;
+}
+.footer-contact svg
+{
+	width: 32px;
+	margin-right: 4px;
+	vertical-align: middle;
+}

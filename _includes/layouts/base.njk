@@ -17,6 +17,17 @@
 			{% include "components/footer.njk" %}
 			{% include "components/popover.njk" %}
 		</div>
+		<script>
+			(function(w, d){
+				var b = d.getElementsByTagName('body')[0];
+				var s = d.createElement("script");
+				var v = !("IntersectionObserver" in w) ? "8.17.0" : "10.20.0";
+				s.async = true;
+				s.src = "/static/js/vanilla-lazyload/lazyload-" + v + ".min.js";
+				w.lazyLoadOptions = {/* Your options here */};
+				b.appendChild(s);
+			}(window, document));
+		</script>
 		<script src="/main.js"></script>
 	</body>
 </html>
