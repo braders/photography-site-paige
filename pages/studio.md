@@ -5,32 +5,32 @@ tags:
   - nav
 title: Studio
 permalink: /studio/index.html
-collections:
-  - Photos:
+photoCollections:
+  - photos:
       - alt: Becky
         image: /static/img/becky1-small.jpg
         large_image: /static/img/becky1.jpg
-        title: Becky
+        orientation: 'portrait'
       - alt: Becky
         image: /static/img/becky2-small.jpg
         large_image: /static/img/becky2.jpg
-        title: ' Becky'
+        orientation: 'portrait'
       - alt: Becky
         image: /static/img/becky3-small.jpg
         large_image: /static/img/becky3.jpg
-        title: ' Becky'
-    subitle: April 2018
+        orientation: 'landscape'
+    subtitle: April 2018
     title: ‘Becky’
-  - Photos:
+  - photos:
       - alt: Alice
         image: /static/img/alice1-small.jpg
         large_image: /static/img/alice1-small.jpg
-        title: Alice
+        orientation: 'landscape'
       - alt: Alice
         image: /static/img/alice2-small.jpg
         large_image: /static/img/alice2.jpg
-        title: Alice
-    subitle: January 2018
+        orientation: 'landscape'
+    subtitle: January 2018
     title: Alice
 ---
 
