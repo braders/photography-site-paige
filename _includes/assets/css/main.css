@@ -444,6 +444,10 @@ h2
 		flex-wrap: wrap;
 		justify-content: space-between;
 	}*/
+	.imggrid__item--landscape
+	{
+		max-width: calc(50% - 30px);
+	}
 }
 @media (max-width: 1000px)
 {

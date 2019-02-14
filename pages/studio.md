@@ -34,21 +34,21 @@ photoCollections:
     title: Alice
   - photos:
       - alt: Female beauty- Blemishes
-        image: /static/img/alice1-small.jpg
-        large_image: /static/img/alice1-small.jpg
+        image: /static/img/femalebeauty-blemishes1-small.jpg
+        large_image: /static/img/femalebeauty-blemishes1.jpg
         orientation: 'landscape'
       - alt: Female beauty- Blemishes
-        image: /static/img/alice2-small.jpg
-        large_image: /static/img/alice2.jpg
+        image: /static/img/femalebeauty-blemishes2-small.jpg
+        large_image: /static/img/femalebeauty-blemishes2.jpg
         orientation: 'landscape'
       - alt: Female beauty- Blemishes
-        image: /static/img/alice2-small.jpg
-        large_image: /static/img/alice2.jpg
+        image: /static/img/femalebeauty-blemishes3-small.jpg
+        large_image: /static/img/femalebeauty-blemishes3.jpg
         orientation: 'landscape'
       - alt: Female beauty- Blemishes
-        image: /static/img/alice2-small.jpg
-        large_image: /static/img/alice2.jpg
-        orientation: 'landscape'
+        image: /static/img/femalebeauty-blemishes4-small.jpg
+        large_image: /static/img/femalebeauty-blemishes4.jpg
+        orientation: 'portrait'
     subtitle: April 2018
     title: Female beauty- Blemishes
   - photos:
@@ -87,12 +87,12 @@ photoCollections:
     title: Frozen Veg & Iced Coffee
   - photos:
       - alt: Male beauty
-        image: /static/img/alice1-small.jpg
-        large_image: /static/img/alice1-small.jpg
+        image: /static/img/male-beauty1-small.jpg
+        large_image: /static/img/male-beauty1.jpg
         orientation: 'landscape'
       - alt: Male beauty
-        image: /static/img/alice2-small.jpg
-        large_image: /static/img/alice2.jpg
+        image: /static/img/male-beauty2-small.jpg
+        large_image: /static/img/male-beauty2.jpg
         orientation: 'landscape'
     subtitle: October 2017
     title: Male beauty
