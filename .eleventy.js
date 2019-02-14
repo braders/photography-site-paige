@@ -45,11 +45,12 @@ module.exports = function(eleventyConfig) {
     return content;
   });
 
-  // only content in the `posts/` directory
-  eleventyConfig.addCollection("posts", function(collection) {
-    return collection.getAllSorted().filter(function(item) {
-      return item.inputPath.match(/^\.\/posts\//) !== null;
-    });
+  eleventyConfig.addFilter("sortNavAlpabetical", function(value) {
+    return value.sort(function(a, b) {
+      if(a.data.navtitle < b.data.navtitle) { return -1; }
+      if(a.data.navtitle > b.data.navtitle) { return 1; }
+      return 0;
+    })
   });
 
   // Don't process folders with static assets e.g. images
