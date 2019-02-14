@@ -21,5 +21,16 @@ collections:
         title: ' Becky'
     subitle: April 2018
     title: ‘Becky’
+  - Photos:
+      - alt: Alice
+        image: /static/img/alice1-small.jpg
+        large_image: /static/img/alice1-small.jpg
+        title: Alice
+      - alt: Alice
+        image: /static/img/alice2-small.jpg
+        large_image: /static/img/alice2.jpg
+        title: Alice
+    subitle: January 2018
+    title: Alice
 ---
 
