@@ -45,14 +45,11 @@ collections:
         fields:
           - {label: "Title", name: "title", widget: "string"}
           - {label: "Subtitle", name: "subitle", widget: "string"}
-          - {label: "Photos", name: "photos", widget: "relation", collection: "Photos", searchFields: ["title"], valueField: "title"}
-  - name: 'Photos'
-    label: 'Photos'
-    folder: 'photos'
-    create: true
-    slug: '{{slug}}'
-    fields:
-      - { label: 'Title', name: 'title', widget: 'string' }
-      - { label: 'Alt Text', name: 'alt', widget: 'string' }
-      - { label: 'Image', name: 'image', widget: 'image', hint: '290px tall' }
-      - { label: 'Large Image', name: 'large_image', widget: 'image', hint: '1024px wide' }
+          - label: "Photos"
+            name: "Photos"
+            widget: "object"
+            fields:
+              - { label: 'Title', name: 'title', widget: 'string' }
+              - { label: 'Alt Text', name: 'alt', widget: 'string' }
+              - { label: 'Image', name: 'image', widget: 'image', hint: '290px tall' }
+              - { label: 'Large Image', name: 'large_image', widget: 'image', hint: '1024px wide' }
