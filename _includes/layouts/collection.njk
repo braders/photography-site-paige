@@ -5,18 +5,12 @@ section: collection
 
 <div class='content-area cf'>
 	<h1>{{ title }}</h1>
-	{%- for collection in photoCollections -%}
-	<div class="collection">
-		{% if collection.title %}<h2>{{collection.title}}</h2>{% endif %}
-		{% if collection.subtitle %}<p class="collection__subtitle">{{collection.subtitle}}</p>{% endif %}
-		<div class="imggrid">
-			{%- for photo in collection.photos -%}
-			<div class="imggrid__item imggrid__item--{{photo.orientation}}">
-				<span class="imggrid__expand"></span>
-				<img data-src='{{photo.image}}' alt='{{photo.alt}}' class="imggrid__img imggrid__img--{{photo.orientation}}" data-large='{{photo.large_image}}'>
-			</div>
-			{%- endfor -%}
+	<div class="imggrid">
+		{%- for photo in photos -%}
+		<div class="imggrid__item imggrid__item--{{photo.orientation}}">
+			<span class="imggrid__expand"></span>
+			<img data-src='{{photo.image}}' alt='{{photo.alt}}' class="imggrid__img imggrid__img--{{photo.orientation}}" data-large='{{photo.large_image}}' data-title='{{photo.title | e}}' data-subtitle='{{photo.subtitle | e}}'>
 		</div>
+		{%- endfor -%}
 	</div>
-	{%- endfor -%}
 </div>

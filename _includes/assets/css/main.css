@@ -91,6 +91,8 @@ img
 	max-width: 100%;
 	font-style: italic;
 	vertical-align: middle;
+	-moz-user-select: none;
+	user-select: none;
 }
 
 img[width],
@@ -426,11 +428,6 @@ h2
 	padding: 12px;
 }
 
-.collection
-{
-	margin-bottom: 60px;
-}
-
 .imggrid
 {
 	margin-right: -30px; /*Equal to right-hand padding of items */
@@ -507,12 +504,6 @@ h2
 	{
 		flex-basis: 100%;
 	}
-}
-
-.collection__subtitle
-{
-	font-size: 14px;
-	margin-top: -10px;
 }
 
 footer

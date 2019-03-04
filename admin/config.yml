@@ -40,11 +40,9 @@ collections:
       - { label: 'Permalink', name: 'permalink', widget: 'string' }
       - { label: 'Navigation Title', name: 'navtitle', widget: 'string' }
       - label: "Collections"
-        name: "photoCollections"
+        name: "photos"
         widget: "list"
         fields:
-          - {label: "Title", name: "title", widget: "string"}
-          - {label: "Subtitle", name: "subtitle", widget: "string"}
           - label: "Photos"
             name: "photos"
             widget: "list"
@@ -53,3 +51,5 @@ collections:
               - { label: 'Alt Text', name: 'alt', widget: 'string' }
               - { label: 'Small Image', name: 'image', widget: 'image', hint: '290px tall' }
               - { label: 'Large Image', name: 'large_image', widget: 'image', hint: '1024px wide' }
+              - {label: "Title", name: "title", widget: "string"}
+              - {label: "Subtitle", name: "subtitle", widget: "string"}

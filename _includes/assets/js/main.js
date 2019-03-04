@@ -46,7 +46,11 @@
 			openPopover: function(e)
 			{
 				var src = jQuery(this).find('[data-large]').attr('data-large');
+				var title = jQuery(this).find('[data-title]').attr('data-title');
+				var subtitle = jQuery(this).find('[data-subtitle]').attr('data-subtitle');
 				jQuery('.popover').find('img').attr('src', src);
+				jQuery('.popover').find('.popover__title').text(title);
+				jQuery('.popover').find('.popover__subtitle').text(subtitle);
 				jQuery('.popover, .popover-bg').fadeIn(400);
 			},
 
