@@ -93,7 +93,7 @@ photos:
   - alt: Frozen Veg & Iced Coffee
     image: /static/img/icedcoffee1-small.jpg
     large_image: /static/img/icedcoffee1.jpg
-    orientation: 'landscape'
+    orientation: 'portrait'
     subtitle: March 2017
     title: Frozen Veg & Iced Coffee
   - alt: Frozen Veg & Iced Coffee
@@ -105,7 +105,7 @@ photos:
   - alt: Male beauty
     image: /static/img/male-beauty1-small.jpg
     large_image: /static/img/male-beauty1.jpg
-    orientation: 'portrait'
+    orientation: 'landscape'
     subtitle: October 2017
     title: Male beauty
   - alt: Male beauty
