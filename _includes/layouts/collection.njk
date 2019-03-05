@@ -9,7 +9,7 @@ section: collection
 		{%- for photo in photos -%}
 		<div class="imggrid__item imggrid__item--{{photo.orientation}}">
 			<span class="imggrid__expand"></span>
-			<img data-src='{{photo.image}}' alt='{{photo.alt}}' class="imggrid__img imggrid__img--{{photo.orientation}}" data-large='{{photo.large_image}}' data-title='{{photo.title | e}}' data-subtitle='{{photo.subtitle | e}}'>
+			<img data-src='{{photo.large_image}}' alt='{{photo.alt}}' class="imggrid__img imggrid__img--{{photo.orientation}}" data-large='{{photo.large_image}}' data-title='{{photo.title | e}}' data-subtitle='{{photo.subtitle | e}}'>
 		</div>
 		{%- endfor -%}
 	</div>

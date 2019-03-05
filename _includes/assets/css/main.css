@@ -446,13 +446,7 @@ h2
 		max-width: calc(50% - 30px);
 	}
 }
-@media (max-width: 1000px)
-{
-	.imggrid__item--portrait
-	{
-		max-width: calc(50% - 30px);
-	}
-}
+
 .imggrid__item
 {
 	display: inline-block;
@@ -503,6 +497,26 @@ h2
 	.imggrid-img--landscape
 	{
 		flex-basis: 100%;
+	}
+}
+
+@media (max-width: 1000px)
+{
+	.imggrid
+	{
+		margin-left: -20px;
+		margin-right: 0;
+		width: 100vw;
+	}
+	.imggrid__item
+	{
+		width: 100%;
+		margin-bottom: 4px;
+		margin-right: 0;
+	}
+	.imggrid img
+	{
+		max-height: none;
 	}
 }
 
