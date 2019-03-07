@@ -93,13 +93,13 @@ photos:
   - alt: Frozen Veg & Iced Coffee
     image: /static/img/icedcoffee1-small.jpg
     large_image: /static/img/icedcoffee1.jpg
-    orientation: 'landscape'
+    orientation: 'portrait'
     subtitle: March 2017
     title: Frozen Veg & Iced Coffee
   - alt: Frozen Veg & Iced Coffee
     image: /static/img/icedcoffee2-small.jpg
     large_image: /static/img/icedcoffee2.jpg
-    orientation: 'landscape'
+    orientation: 'portrait'
     subtitle: March 2017
     title: Frozen Veg & Iced
   - alt: Male beauty
@@ -141,13 +141,13 @@ photos:
   - alt: Alice in Wonderland
     image: /static/img/alice-in-wonderland1-small.jpg
     large_image: /static/img/alice-in-wonderland1.jpg
-    orientation: 'landscape'
+    orientation: 'portrait'
     subtitle: January 2018
     title: Alice in Wonderland
   - alt: Alice in Wonderland
     image: /static/img/alice-in-wonderland2-small.jpg
     large_image: /static/img/alice-in-wonderland2.jpg
-    orientation: 'landscape'
+    orientation: 'portrait'
     subtitle: January 2018
     title: Alice in Wonderland
 ---
