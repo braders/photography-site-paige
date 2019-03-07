@@ -433,7 +433,7 @@ h2
 	margin-right: -30px; /*Equal to right-hand padding of items */
 }
 
-@media (min-width: 1000px)
+@media (min-width: 500px)
 {
 	/*.imggrid
 	{
@@ -446,7 +446,7 @@ h2
 		max-width: calc(50% - 30px);
 	}
 }
-@media (max-width: 1000px)
+@media (max-width: 500px)
 {
 	.imggrid__item--portrait
 	{
@@ -458,6 +458,7 @@ h2
 	display: inline-block;
 	margin-right: 30px;
 	margin-bottom: 30px;
+	align-self: end;
 
 	position: relative;
 	cursor: pointer;
