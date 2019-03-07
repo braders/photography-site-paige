@@ -26,47 +26,46 @@
 {
 	position: absolute;
 	left: 50%;
-	top: 50%;
+	top: calc(50% - 30px);
 	transform: translate(-50%, -50%);
 	max-width: 90vw;
 	max-height: 90vh;
 }
 .popover img
 {
+	max-width: 90vw;
 	max-height: 90vh;
+	max-height: calc(90vh - 70px);
+	width: auto;
+	height: auto;
 }
 .popover__desc
 {
 	position: fixed;
+	left: 0;
+	right: 0;
 	bottom: 0;
-	background: rgba(99, 99, 99, 0.9);
-	padding: 0 14px;
+
+	background: rgba(121, 120, 120, 0.9);
+	padding: 2px 14px;
 }
 .popover__title
 {
 	color: white;
 	font-family: KoHo,sans-serif;
-	font-size: 30px;
+	font-size: 22px;
 	margin-bottom: 10px;
 }
 .popover__subtitle
 {
 	color: white;
-	font-family: KoHo,sans-serif;
-	font-size: 16px;
+	font-family: Montserrat, sans-serif;
+	font-size: 14px;
 	margin-bottom: 10px;
 }
 
-.popover::before {
-    content: "\00a0";
-    width: 40px;
-    height: 40px;
-    display: block;
-    cursor: pointer;
-    position: absolute;
-    top: 20px;
-    right: 30px;
-    background-color: transparent;
-    background-image: url(/static/img/close-white.svg);
-    background-size: 100% 100%;
+.popover__content
+{
+	display: flex;
+	flex-direction: column;
 }
