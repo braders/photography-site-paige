@@ -32,6 +32,7 @@ photos:
     orientation: 'portrait'
   - alt: Hair and make-up student collaboration
     title: Hair and make-up student collaboration
+    subtitle: December 2016
     image: /static/img/collaborations/5.jpg
     large_image: /static/img/collaborations/5_1.jpg
     orientation: 'landscape'

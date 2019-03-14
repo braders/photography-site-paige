@@ -56,6 +56,7 @@ photos:
     orientation: 'landscape'
   - alt: Rome
     title: Rome
+    subtitle: October 2015
     image: /static/img/architecture/9.jpg
     large_image: /static/img/architecture/9_1.jpg
     orientation: 'landscape'
@@ -73,11 +74,13 @@ photos:
     orientation: 'landscape'
   - alt: Brighton beach
     title: Brighton beach
+    subtitle: December 2017
     image: /static/img/architecture/12.jpg
     large_image: /static/img/architecture/12_1.jpg
     orientation: 'portrait'
   - alt: Brighton beach
     title: Brighton beach
+    subtitle: December 2017
     image: /static/img/architecture/13.jpg
     large_image: /static/img/architecture/13_1.jpg
     orientation: 'landscape'
