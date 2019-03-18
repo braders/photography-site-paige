@@ -46,4 +46,8 @@
 	{
 		margin-top: 0;
 	}
+	.home__img-wrap
+	{
+		margin: 0 -20px;
+	}
 }
