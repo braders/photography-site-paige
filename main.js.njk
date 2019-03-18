@@ -4,6 +4,7 @@ permalink: /main.js
 ---
 {% set js %}
   {% include "assets/js/vendor/jquery.js" %}
+  {% include "assets/js/vendor/slick.js" %}
   {% include "assets/js/main.js" %}
 {% endset %}
 {{ js | jsmin| safe }}

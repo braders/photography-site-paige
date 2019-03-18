@@ -426,6 +426,12 @@ h2
 	font-size: 20px;
 	font-family: 'KoHo', sans-serif;
 	padding: 12px;
+	transition: 0.6s ease;
+}
+.contact-block button[type=submit]:hover,
+.contact-block button[type=submit]:focus
+{
+	opacity: 0.6;
 }
 
 .imggrid

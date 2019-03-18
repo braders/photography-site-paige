@@ -4,8 +4,10 @@
 	<title>{{ title or metadata.title }}</title>
 	{% set css %}
 		{% include "assets/css/main.css" %}
+		{% include "assets/css/home.css" %}
 		{% include "assets/css/footer.css" %}
 		{% include "assets/css/popover.css" %}
+		{% include "assets/css/vendor/slick.css" %}
 	{% endset %}
 	<link href="https://fonts.googleapis.com/css?family=KoHo:300,400|Montserrat" rel="stylesheet">
 	<style>{{ css | cssmin | safe }}</style>

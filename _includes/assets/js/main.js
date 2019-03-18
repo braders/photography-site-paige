@@ -7,6 +7,7 @@
 			init: function () {
 				fn.initMenu();
 				fn.initPopover();
+				fn.initHome();
 			},
 
 			initMenu: function() {
@@ -52,13 +53,6 @@
 				jQuery('.popover').find('.popover__title').text(title);
 				jQuery('.popover').find('.popover__subtitle').text(subtitle);
 				jQuery('.popover, .popover-bg').fadeIn(400);
-
-				var img = jQuery('.popover').find('img');
-				if (fn.isImgLoaded(img)) {
-					fn.resizePopoverImage(img);
-				} else {
-					img.on('load', fn.resizePopoverImage(img));
-				}
 			},
 
 			isImgLoaded: function(img) {
@@ -73,29 +67,34 @@
 				return true;
 			},
 
-			resizePopoverImage: function(img) {
-				// Wait until screen painted
-				/*window.setTimeout(function() {
-					var fits = false;
-					var width = jQuery(img).width();
-					var winHeight = jQuery(window).height();
-					while (!fits) {
-						var height = jQuery('.popover__content').height();
-						if (height < winHeight) {
-							width = width - 1;
-							console.log(width);
-							jQuery(img).css('max-width', width);
-						} else {
-							matches = true;
-						}
-					}
-				}, 1)*/
-			},
-
 			closePopover: function()
 			{
 				jQuery('.popover, .popover-bg').fadeOut(400);
 				jQuery('.popover').find('img').removeAttr('src');
+			},
+
+			initHome: function()
+			{
+				jQuery('.slider').slick({
+					arrows: false,
+					lazyLoad: 'ondemand',
+					slidesToShow: 1,
+					slidesToScroll: 1,
+					autoplay: true,
+					autoplaySpeed: 4000,
+					pauseOnFocus: false,
+					pauseOnHover: false,
+					infinite: true,
+					fade: true,
+					cssEase: 'linear',
+					initialSlide: fn.getRandomInt(0, jQuery('.slider').find('img').length)
+				});
+			},
+
+			getRandomInt: function(min, max) {
+				min = Math.ceil(min);
+				max = Math.floor(max);
+				return Math.floor(Math.random() * (max - min)) + min; //The maximum is exclusive and the minimum is inclusive
 			}
 
 		}

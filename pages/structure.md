@@ -26,8 +26,8 @@ photos:
     orientation: 'landscape'
   - alt: London’s structure
     title: London’s structure - October 2017
-    image: /static/img/architecture/4.jpg
     subtitle: October 2017
+    image: /static/img/architecture/4.jpg
     large_image: /static/img/architecture/4_1.jpg
     orientation: 'landscape'
   - alt: Iceland’s structure - March 2017

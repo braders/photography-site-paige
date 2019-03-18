@@ -1,0 +1,49 @@
+.home__img-wrap
+{
+	height: 0;
+	padding-bottom: 67%;
+	overflow: hidden;
+	position: relative;
+	margin-top: 10px;
+}
+.home__heading
+{
+	background: #efefef;
+	display: inline-block;
+	padding: 10px 20px;
+	margin-top: -40px;
+	z-index: 20;
+	position: relative;
+	margin-bottom: 10px;
+	padding-left: 10px;
+}
+
+.home__subtitle
+{
+	padding-left: 10px;
+	font-size: 26px;
+	margin-bottom: 40px;
+}
+.home__btn
+{
+	background: #000;
+	color: #fff;
+	font-size: 20px;
+	font-family: KoHo,sans-serif;
+	padding: 12px;
+	margin-left: 10px;
+	text-decoration: none;
+	transition: 0.6s ease;
+}
+.home__btn:hover,
+.home__btn:focus
+{
+	opacity: 0.6;
+}
+
+@media (max-width: 1023px) {
+	.home__heading
+	{
+		margin-top: 0;
+	}
+}
