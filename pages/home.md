@@ -1,12 +1,12 @@
 ---
 layout: layouts/home.njk
-title: Paige Taylor Photography - Photography in Brighton, Hove and the surrounding area
-seotitle: Paige Taylor Photography - Photography in Brighton, Hove and the surrounding area
-permalink: /
 navtitle: Home
-
+title: >-
+  Paige Taylor Photography - Photography in Brighton, Hove and the surrounding
+  area
+permalink: /
 heading: Paige Taylor Photography
-subheading: 'Events photography in Brighton, hove and surrounding areas.'
+subheading: 'Events photography in Brighton, Hove and surrounding areas.'
 bodycopy: >-
   <p>My work includes everything from traditional weddings, fun family shoots
   with your children and pets, to relaxed and quirky events. I can photograph
