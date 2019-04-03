@@ -30,6 +30,13 @@ collections:
     create: false # Change to true to allow editors to create new pages
     slug: '{{slug}}'
     fields:
+      - { name: 'layout', widget: 'hidden' }
+      - { name: 'navtitle', widget: 'hidden' }
+      - { name: 'editablepage', widget: 'hidden' }
+      - { label: 'Title', name: 'title', widget: 'string' }
+      - { label: 'Permalink', name: 'permalink', widget: 'string' }
+      - { label: 'Navigation Title', name: 'navtitle', widget: 'string' }
+      - { label: 'Body', name: 'body', widget: 'markdown' }
       - { label: 'Heading', name: 'heading', widget: 'string' }
       - { label: 'Subheading', name: 'subheading', widget: 'string' }
       - { label: 'Body Copy', name: 'bodycopy', widget: 'text' }
