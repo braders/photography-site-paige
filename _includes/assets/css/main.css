@@ -358,6 +358,10 @@ header
 {
 	margin-bottom: 20px;
 }
+.content-area a
+{
+	color: inherit;
+}
 .content-area--about img
 {
 	float: left;

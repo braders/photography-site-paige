@@ -2,11 +2,7 @@ backend:
   name: git-gateway
   branch: master # Branch to update (optional; defaults to master)
 
-# Uncomment below to enable drafts
-# publish_mode: editorial_workflow
-
-media_folder: 'static/img' # Media files will be stored in the repo under images/uploads
-
+media_folder: 'static/img'
 publish_mode: editorial_workflow
 
 collections:
@@ -26,6 +22,18 @@ collections:
       - { label: 'Permalink', name: 'permalink', widget: 'string' }
       - { label: 'Navigation Title', name: 'navtitle', widget: 'string' }
       - { label: 'Body', name: 'body', widget: 'markdown' }
+  # Homepage
+  - name: 'homepage'
+    label: 'Homepage'
+    filter: {field: "layout", value: "layouts/home.njk"}
+    folder: 'pages'
+    create: false # Change to true to allow editors to create new pages
+    slug: '{{slug}}'
+    fields:
+      - { label: 'Heading', name: 'heading', widget: 'string' }
+      - { label: 'Subheading', name: 'subheading', widget: 'string' }
+      - { label: 'Body Copy', name: 'bodycopy', widget: 'text' }
+  # Photo pages
   - name: 'Photo Collections'
     label: 'Photo Collections'
     filter: {field: "layout", value: "layouts/collection.njk"}
@@ -43,8 +51,8 @@ collections:
         name: "photos"
         widget: "list"
         fields:
-          - { label: 'Orientation', name: 'orientation', widget: 'select', options: ['landscape', 'portrait'] }
           - { label: 'Alt Text', name: 'alt', widget: 'string' }
+          - { label: 'Orientation', name: 'orientation', widget: 'select', options: ['landscape', 'portrait'] }
           - { label: 'Small Image', name: 'image', widget: 'image', hint: '320px tall' }
           - { label: 'Large Image', name: 'large_image', widget: 'image', hint: '1024px wide' }
           - { label: "Title", name: "title", widget: "string"}
